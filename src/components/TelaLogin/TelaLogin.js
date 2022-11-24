@@ -20,8 +20,8 @@ function TelaLogin(props) {
   }
 
   const comfirmaCadastro = 
-    email.includes('@') && senha > 0 ?
-      () => props.irPara(3)
+    email.includes('@') && senha.length > 0 ?
+      () => props.irPara(4)
       : enviarLogin
 
 

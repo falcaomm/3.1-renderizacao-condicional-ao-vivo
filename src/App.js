@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import TelaLogin from "./components/TelaLogin/TelaLogin";
 import TelaCadastro from "./components/TelaCadastro/TelaCadastro";
+import TelaEndereco from "./components/TelaEndereco/TelaEndereco"
 
 import TelaUsuarioCadastrado from "./components/TelaUsuarioCadastrado/TelaUsuarioCadastrado.js";
 import { useState } from "react";
@@ -58,6 +59,15 @@ function App() {
         </MainContainer>
       );
     case 3:
+      return (
+        <MainContainer >
+          <GlobalStyled />
+          <TelaEndereco
+            irPara={irPara}
+          />
+        </MainContainer>
+      );
+    case 4:
       return (
         <MainContainer >
           <GlobalStyled />
