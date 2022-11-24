@@ -5,9 +5,11 @@ export const Div = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 `
 
 export const Titulo = styled.h1`
+    padding: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #ff4400;
 `
